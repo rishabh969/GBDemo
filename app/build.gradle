@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+//com.plaps.androidcleancode
+    defaultConfig {
+        applicationId "com.gb.demo"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "int", "LIMIT", "100"
+        buildConfigField "String", "BASEURL", "\"http://api.themoviedb.org/3/movie/popular?api_key=87a901020f496977f9d6d508c5d186ec\""
+        buildConfigField "int", "CACHETIME", "432000" // 5days
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}

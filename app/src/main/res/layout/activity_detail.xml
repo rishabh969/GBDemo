@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <com.gb.demo.cache.SmartImageView
+            android:id="@+id/img_big_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_margin="25dp"
+            android:layout_marginBottom="60dp"/>
+
+        <TextView
+            android:id="@+id/release_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_big_poster"
+            android:text="Name"
+            android:background="@color/black"
+            android:alpha=".9"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="@dimen/size2"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/ll_release_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/release_name"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Date"
+                android:textStyle="bold"
+                android:textSize="@dimen/size1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-13-1911"
+                android:textSize="@dimen/size1"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ll_release_date"
+           >
+            <TextView
+                android:id="@+id/tv_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

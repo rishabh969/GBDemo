@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GB Demo</string>
+    <string name="no_data">No Data Found</string>
+    <string name="no_net">No Internet Connection</string>
+    <string name="no_net_detail">You need to have Mobile Data or wifi to access this. Press ok to Exit</string>
+    <string name="ok">Ok</string>
+
+</resources>
