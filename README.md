@@ -1,5 +1,7 @@
-# Clean-Android-Code
+# Simple project without third party libs
 
-Sample demo to implement MVP, Dagger 2, RxJava and Retrofit 2
-
-See the tutorial at https://medium.com/@nurrohman/a-simple-android-apps-with-mvp-dagger-rxjava-and-retrofit-4edb214a66d7#.o8fsr2904
+1:- MVP Design 
+2:- Cache for image 
+3:- only 1.4 mb apk size
+4:- Http Connection use for network
+5:- Compile version 26
